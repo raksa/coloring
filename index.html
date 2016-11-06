@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Micky Mouse</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<div class="main">
+	<div class="title">CHOOSE A SCENE TO COLOR</div>
+	<div id="choice" class="choice">
+		<div class="image"><a href="#" onclick="choiceClick(this);"><img src="image/img1.png"></a></div>
+		<div class="image"><a href="#" onclick="choiceClick(this);"><img src="image/img1.png"></a></div>
+		<div class="image"><a href="#" onclick="choiceClick(this);"><img src="image/img1.png"></a></div>
+		<div class="image"><a href="#" onclick="choiceClick(this);"><img src="image/img1.png"></a></div>
+		<div class="image"><a href="#" onclick="choiceClick(this);"><img src="image/img1.png"></a></div>
+		<div class="image"><a href="#" onclick="choiceClick(this);"><img src="image/img1.png"></a></div>
+	</div>
+</div>
+<div class="playing">
+	<div class="header">
+		<a href="#" class="back" onclick="backClick(this);">
+			<img src="image/back.png">
+		</a>
+		<div class="title">Activity <span></span></div>
+		<a href="#" class="menu" onclick="menuClick(this);">
+			<img src="image/menu.png">
+		</a>
+	</div>
+	<div id="menu" class="menu-box">
+		<div class="menu-item">Menu item1</div>
+		<div class="menu-item">Menu item2</div>
+		<div class="menu-item">Menu item3</div>
+		<div class="menu-item">Menu item4</div>
+		<div class="menu-item">Menu item5</div>
+		<div class="close">
+			<a href="#" class="menu" onclick="menuClick(this);">
+				<img src="image/close.png">
+			</a>
+		</div>
+	</div>
+
+	<div class="color">
+		<div id="color-container"></div>
+		<div>
+			<a href="#" class="erase" onclick="eraseClick();">
+				<img src="image/erase.png">
+			</a>
+		</div>
+	</div>
+
+	<div class="image-canvas" id="canvasDiv"></div>
+
+	<div class="footer">
+		<a href="#" class="footer-ribbon" onclick="footRibbonClick(this);">
+			<img src="image/btn-footer2.png">
+		</a>
+		<div class="btn">
+			<a href="#" onclick="btnClick(this);"><img src="image/btn1.png"></a>
+			<a href="#" onclick="btnClick(this);"><img src="image/btn2.png"></a>
+			<a href="#" onclick="btnClick(this);"><img src="image/btn3.png"></a>
+		</div>
+	</div>
+</div>
+<script src="jquery-3.1.1.min.js"></script>
+<!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+<script src="coloringUtil.js"></script>
+<script src="coloring.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
